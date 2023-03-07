@@ -33,7 +33,7 @@ struct Home: View {
             })
             .navigationTitle("Notes")
             .navigationBarItems(trailing: Button(action: {
-                print("Add a note")
+                self.showAdd.toggle()
             }, label: {
                 Text("Add")
             }))
