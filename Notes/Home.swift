@@ -11,6 +11,8 @@ struct Home: View {
     
     @State var notes = [Note]()
     
+    @State var showAdd = false
+    
     var body: some View {
         
         NavigationView {
