@@ -25,7 +25,7 @@ struct AddNoteView: View {
     }
     
     func postNote() {
-        
+        print("POST")
     }
 }
 
