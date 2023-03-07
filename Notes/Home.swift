@@ -25,7 +25,9 @@ struct Home: View {
                 }
                 .padding()
             }
-            .sheet(isPresented: <#T##Binding<Bool>#>, content: <#T##() -> View#>)
+            .sheet(isPresented: $showAdd, content: {
+                AddNoteView()
+            })
             .onAppear(perform: {
                 fetchNotes()
             })
