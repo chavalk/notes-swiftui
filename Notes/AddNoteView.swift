@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AddNoteView: View {
+    
+    @State var text = ""
+    
     var body: some View {
         HStack {
             TextField("Write a note...", text: <#T##Binding<String>#>)
