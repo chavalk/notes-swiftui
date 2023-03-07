@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State var notes = [Note]()
+    
     var body: some View {
         
         NavigationView {
