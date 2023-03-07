@@ -16,9 +16,9 @@ struct Home: View {
         NavigationView {
             List(self.notes) { note in
                 VStack {
-                    Image(systemName: "globe")
-                        .imageScale(.large)
-                        .foregroundColor(.accentColor)
+//                    Image(systemName: "globe")
+//                        .imageScale(.large)
+//                        .foregroundColor(.accentColor)
                     Text(note.note)
                 }
                 .padding()
