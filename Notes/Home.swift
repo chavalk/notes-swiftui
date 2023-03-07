@@ -40,6 +40,8 @@ struct Home: View {
             
             print(String(data: data, encoding: .utf8))
         }
+        
+        task.resume()
     }
 }
 
