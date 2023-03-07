@@ -20,6 +20,9 @@ struct Home: View {
                 }
                 .padding()
             }
+            .onAppear(perform: {
+                fetchNotes()
+            })
             .navigationTitle("Notes")
             .navigationBarItems(trailing: Button(action: {
                 print("Add a note")
