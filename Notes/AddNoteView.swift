@@ -13,7 +13,7 @@ struct AddNoteView: View {
     
     var body: some View {
         HStack {
-            TextField("Write a note...", text: <#T##Binding<String>#>)
+            TextField("Write a note...", text: $text)
         }
     }
 }
