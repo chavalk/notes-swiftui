@@ -65,6 +65,7 @@ struct AddNoteView: View {
         task.resume()
         
         self.text = ""
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
