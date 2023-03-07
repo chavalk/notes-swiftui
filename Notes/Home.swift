@@ -21,6 +21,7 @@ struct Home: View {
                 .padding()
             }
         }
+        .navigationTitle("Notes")
     }
 }
 
