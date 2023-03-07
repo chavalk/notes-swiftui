@@ -28,6 +28,16 @@ struct Home: View {
             }))
         }
     }
+    
+    func fetchNotes() {
+        let url = URL(string: "http://localhost:3000/notes")!
+        
+        let task = URLSession.shared.dataTask(with: url) { data, res, err in
+            guard let data = data else { return }
+            
+            print(String(data: data, encoding: .utf8))
+        }
+    }
 }
 
 struct Note: Identifiable, Codable {
