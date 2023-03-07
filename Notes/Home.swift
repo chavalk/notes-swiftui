@@ -73,7 +73,32 @@ struct Home: View {
     }
     
     func deleteNote() {
-        print("DELETE")
+        
+        guard let id = deleteItem?._id else { return }
+        
+        let url = URL(string: "http://localhost:3000/notes/\(id)")!
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "DELETE"
+        
+        let task = URLSession.shared.dataTask(with: request) { data, res, err in
+            guard err == nil else { return }
+            
+            guard let data = data else { return }
+            
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+                    print(json)
+                }
+            }
+            catch let error {
+                print(error)
+            }
+        }
+        task.resume()
+        
+        fetchNotes()
     }
 }
 
