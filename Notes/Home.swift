@@ -28,6 +28,9 @@ struct Home: View {
                     Text(note.note)
                 }
                 .padding()
+                .onLongPressGesture {
+                    <#code#>
+                }
             }
             .sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
                 AddNoteView()
