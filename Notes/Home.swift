@@ -14,12 +14,12 @@ struct Home: View {
     var body: some View {
         
         NavigationView {
-            List(0..<9) { i in
+            List(self.notes) { note in
                 VStack {
                     Image(systemName: "globe")
                         .imageScale(.large)
                         .foregroundColor(.accentColor)
-                    Text("We are at \(i)")
+                    Text(note.note)
                 }
                 .padding()
             }
