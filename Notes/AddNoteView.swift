@@ -20,6 +20,10 @@ struct AddNoteView: View {
             Button(action: <#T##() -> Void#>, label: <#T##() -> _#>)
         }
     }
+    
+    func postNote() {
+        
+    }
 }
 
 struct AddNoteView_Previews: PreviewProvider {
