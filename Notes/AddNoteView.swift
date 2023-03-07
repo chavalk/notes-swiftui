@@ -11,6 +11,8 @@ struct AddNoteView: View {
     
     @State var text = ""
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         HStack {
             TextField("Write a note...", text: $text)
