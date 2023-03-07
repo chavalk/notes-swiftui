@@ -23,6 +23,7 @@ struct Home: View {
                 }
                 .padding()
             }
+            .sheet(isPresented: <#T##Binding<Bool>#>, content: <#T##() -> View#>)
             .onAppear(perform: {
                 fetchNotes()
             })
