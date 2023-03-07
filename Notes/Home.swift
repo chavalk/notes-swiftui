@@ -36,6 +36,9 @@ struct Home: View {
                     deleteItem = note
                 }
             }
+            .alert(isPresented: $showAlert, content: {
+                alert
+            })
             .sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
                 AddNoteView()
             })
