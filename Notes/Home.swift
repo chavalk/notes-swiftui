@@ -25,7 +25,7 @@ struct Home: View {
                 }
                 .padding()
             }
-            .sheet(isPresented: $showAdd, content: {
+            .sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
                 AddNoteView()
             })
             .onAppear(perform: {
