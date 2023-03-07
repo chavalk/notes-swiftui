@@ -20,8 +20,13 @@ struct Home: View {
                 }
                 .padding()
             }
+            .navigationTitle("Notes")
+            .navigationBarItems(trailing: Button(action: {
+                print("Add a note")
+            }, label: {
+                Text("Add")
+            }))
         }
-        .navigationTitle("Notes")
     }
 }
 
