@@ -30,6 +30,12 @@ struct Home: View {
     }
 }
 
+struct Note: Identifiable, Codable {
+    var id: String { _id }
+    var _id: String
+    var note: String
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Home()
