@@ -32,7 +32,8 @@ struct Home: View {
                 }
                 .padding()
                 .onLongPressGesture {
-                    <#code#>
+                    self.showAlert.toggle()
+                    deleteItem = note
                 }
             }
             .sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
