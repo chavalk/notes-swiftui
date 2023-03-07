@@ -71,6 +71,10 @@ struct Home: View {
         
         task.resume()
     }
+    
+    func deleteNote() {
+        print("DELETE")
+    }
 }
 
 struct Note: Identifiable, Codable {
