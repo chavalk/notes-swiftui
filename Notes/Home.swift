@@ -10,14 +10,16 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         
-        List(0..<9) { i in
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("We are at \(i)")
+        NavigationView {
+            List(0..<9) { i in
+                VStack {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundColor(.accentColor)
+                    Text("We are at \(i)")
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }
