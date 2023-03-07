@@ -43,7 +43,7 @@ struct Home: View {
             
             do {
                 let notes = try JSONDecoder().decode([Note].self, from: data)
-                print(notes)
+                self.notes = notes
             }
             catch {
                 print(error)
