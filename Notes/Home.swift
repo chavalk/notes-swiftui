@@ -13,6 +13,9 @@ struct Home: View {
     
     @State var showAdd = false
     
+    @State var showAlert = false
+    @State var deleteItem: Note?
+    
     var alert: Alert {
         Alert(title: Text("Delete"), message: Text("Are you sure you want to delete this note?"), primaryButton: .destructive(Text("Delete")), secondaryButton: .cancel())
     }
