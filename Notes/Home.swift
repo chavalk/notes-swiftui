@@ -48,6 +48,9 @@ struct Home: View {
                         Text(note.note)
                             .padding()
                     }
+                    .onTapGesture {
+                        
+                    }
                 }
             }
             .alert(isPresented: $showAlert, content: {
