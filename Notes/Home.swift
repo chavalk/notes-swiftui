@@ -50,7 +50,8 @@ struct Home: View {
                             .padding()
                     }
                     .onTapGesture {
-                        
+                        self.updateNote = note.note
+                        self.showAdd.toggle()
                     }
                 }
             }
