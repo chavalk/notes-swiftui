@@ -65,7 +65,7 @@ struct Home: View {
                     AddNoteView()
                 }
                 else {
-                    UpdateNoteView(text: $updateNote)
+                    UpdateNoteView(text: $updateNote, noteId: $updateNoteId)
                 }
             })
             .onAppear(perform: {
