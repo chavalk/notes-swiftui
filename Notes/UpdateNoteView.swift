@@ -23,6 +23,10 @@ struct UpdateNoteView: View {
             .padding(8)
         }
     }
+    
+    func updateNote() {
+        print("UPDATE")
+    }
 }
 
 struct UpdateNoteView_Previews: PreviewProvider {
