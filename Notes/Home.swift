@@ -16,6 +16,7 @@ struct Home: View {
     @State var showAlert = false
     @State var deleteItem: Note?
     @State var updateNote = ""
+    @State var updateNoteId = ""
     
     @State var isEditMode: EditMode = .inactive
     
