@@ -29,8 +29,8 @@ struct UpdateNoteView: View {
     }
 }
 
-struct UpdateNoteView_Previews: PreviewProvider {
-    static var previews: some View {
-        UpdateNoteView(text: <#Binding<String>#>)
-    }
-}
+//struct UpdateNoteView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UpdateNoteView(text: text)
+//    }
+//}
