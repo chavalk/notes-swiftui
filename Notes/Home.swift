@@ -49,7 +49,12 @@ struct Home: View {
             })
             .navigationTitle("Notes")
             .navigationBarItems(leading: Button(action: {
-                self.isEditMode = .active
+                if (self.isEditMode == .inactive) {
+                    self.isEditMode = .active
+                }
+                else {
+                    self.isEditMode = .inactive
+                }
             }, label: {
                 if (self.isEditMode == .inactive) {
                     Text("Edit")
