@@ -59,8 +59,8 @@
 				BE03A83429B6E8EC001920BD /* Home.swift */,
 				BE03A83629B6E8EE001920BD /* Assets.xcassets */,
 				BE72C2F129B7EA5900AB2F8F /* AddNoteView.swift */,
-				BE03A83829B6E8EE001920BD /* Preview Content */,
 				BE72C2F329B829DA00AB2F8F /* UpdateNoteView.swift */,
+				BE03A83829B6E8EE001920BD /* Preview Content */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
