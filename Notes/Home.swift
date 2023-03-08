@@ -51,7 +51,12 @@ struct Home: View {
             .navigationBarItems(leading: Button(action: {
                 self.isEditMode = .active
             }, label: {
-                Text("Edit")
+                if (self.isEditMode == .inactive) {
+                    Text("Edit")
+                }
+                else {
+                    Text("Done")
+                }
             }), trailing: Button(action: {
                 self.showAdd.toggle()
             }, label: {
