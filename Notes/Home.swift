@@ -110,6 +110,10 @@ struct Home: View {
         }
         
         task.resume()
+        
+        if (self.isEditMode == .active) {
+            self.isEditMode = .inactive
+        }
     }
     
     func deleteNote() {
