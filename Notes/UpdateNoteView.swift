@@ -10,6 +10,7 @@ import SwiftUI
 struct UpdateNoteView: View {
     
     @Binding var text: String
+    @Binding var noteId: String
     
     var body: some View {
         HStack {
