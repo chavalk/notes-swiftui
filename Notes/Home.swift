@@ -59,7 +59,12 @@ struct Home: View {
                 alert
             })
             .sheet(isPresented: $showAdd, onDismiss: fetchNotes, content: {
-                AddNoteView()
+                if (self.isEditMode == .inactive) {
+                    AddNoteView()
+                }
+                else {
+                    UpdateNoteView(text: $updateNote)
+                }
             })
             .onAppear(perform: {
                 fetchNotes()
