@@ -52,6 +52,7 @@ struct Home: View {
                     }
                     .onTapGesture {
                         self.updateNote = note.note
+                        self.updateNoteId = note.id
                         self.showAdd.toggle()
                     }
                 }
