@@ -9,7 +9,16 @@ import SwiftUI
 
 struct UpdateNoteView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            TextField("Write a note...", text: $text)
+                .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                .clipped()
+            
+            Button(action: postNote) {
+                Text("Add")
+            }
+            .padding(8)
+        }
     }
 }
 
