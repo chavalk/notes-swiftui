@@ -46,7 +46,11 @@ struct Home: View {
                 fetchNotes()
             })
             .navigationTitle("Notes")
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(leading: Button(action: {
+                
+            }, label: {
+                Text("Edit")
+            }), trailing: Button(action: {
                 self.showAdd.toggle()
             }, label: {
                 Text("Add")
