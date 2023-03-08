@@ -13,12 +13,12 @@ struct UpdateNoteView: View {
     
     var body: some View {
         HStack {
-            TextField("Write a note...", text: $text)
+            TextField("Update a note...", text: $text)
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 .clipped()
             
-            Button(action: postNote) {
-                Text("Add")
+            Button(action: updateNote) {
+                Text("Update")
             }
             .padding(8)
         }
