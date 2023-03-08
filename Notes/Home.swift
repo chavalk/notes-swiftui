@@ -49,7 +49,7 @@ struct Home: View {
             })
             .navigationTitle("Notes")
             .navigationBarItems(leading: Button(action: {
-                
+                self.isEditMode = .active
             }, label: {
                 Text("Edit")
             }), trailing: Button(action: {
