@@ -9,6 +9,8 @@ import SwiftUI
 
 struct UpdateNoteView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @Binding var text: String
     @Binding var noteId: String
     
