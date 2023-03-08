@@ -31,6 +31,6 @@ struct UpdateNoteView: View {
 
 struct UpdateNoteView_Previews: PreviewProvider {
     static var previews: some View {
-        UpdateNoteView()
+        UpdateNoteView(text: <#Binding<String>#>)
     }
 }
